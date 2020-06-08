@@ -1,5 +1,6 @@
 
 package calculator;
+import java.awt.Color;
 import java.awt.event.*;
 import javax.swing.*;	
 public class Calculator extends JFrame {
@@ -53,6 +54,24 @@ public class Calculator extends JFrame {
 	    bequals.setBounds(420,110,50,110);
 	    breset.setBounds(30,190,50,30);
 	    l2.setBounds(30,230,40,40);
+	    breset.setBackground(Color.red);
+	    bequals.setBackground(Color.orange);
+	    b1.setBackground(Color.lightGray);
+	    b2.setBackground(Color.lightGray);
+	    b3.setBackground(Color.lightGray);
+	    b4.setBackground(Color.lightGray);
+	    b5.setBackground(Color.lightGray);
+	    b6.setBackground(Color.lightGray);
+	    b7.setBackground(Color.lightGray);
+	    b8.setBackground(Color.lightGray);
+	    b9.setBackground(Color.lightGray);
+	    b0.setBackground(Color.lightGray);
+	    badd.setBackground(Color.green);
+	    bsubtract.setBackground(Color.green);
+	    bmultiply.setBackground(Color.green);
+	    bdivide.setBackground(Color.green);
+	    bdot.setBackground(Color.white);
+	    t1.setBackground(Color.white);
 		add(t1);
 		add(b1);
 		add(b2);
@@ -90,6 +109,7 @@ public class Calculator extends JFrame {
 		bequals.addActionListener(o1);
 		breset.addActionListener(o1);
 		bdot.addActionListener(o1);
+		setLocation(300,200);
 	}
 
 class operation implements ActionListener{
